@@ -10,7 +10,7 @@ function App() {
   const [isShiny, setIsShiny] = useState(false);
 
   useEffect(() => {
-    fetch('../public/pokemon.json')
+    fetch('./public/pokemon.json')
       .then((res) => res.json())
       .then((data) => setPokemons(data))
       .catch((err) => console.error("Erreur:", err));
